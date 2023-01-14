@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		C7B811162972779500BAE319 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B811152972779500BAE319 /* main.swift */; };
+		C7B8111D297277AC00BAE319 /* FixedArrayGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B8111C297277AC00BAE319 /* FixedArrayGenerator.swift */; };
+		C7B8111F297277D400BAE319 /* TestFileGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B8111E297277D400BAE319 /* TestFileGenerator.swift */; };
+		C7B811232972832B00BAE319 /* ErrorGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B811222972832B00BAE319 /* ErrorGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,9 @@
 /* Begin PBXFileReference section */
 		C7B811122972779500BAE319 /* ScaleCodecFixedArrayGenerator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ScaleCodecFixedArrayGenerator; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7B811152972779500BAE319 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		C7B8111C297277AC00BAE319 /* FixedArrayGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedArrayGenerator.swift; sourceTree = "<group>"; };
+		C7B8111E297277D400BAE319 /* TestFileGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFileGenerator.swift; sourceTree = "<group>"; };
+		C7B811222972832B00BAE319 /* ErrorGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,9 @@
 			isa = PBXGroup;
 			children = (
 				C7B811152972779500BAE319 /* main.swift */,
+				C7B8111C297277AC00BAE319 /* FixedArrayGenerator.swift */,
+				C7B8111E297277D400BAE319 /* TestFileGenerator.swift */,
+				C7B811222972832B00BAE319 /* ErrorGenerator.swift */,
 			);
 			path = ScaleCodecFixedArrayGenerator;
 			sourceTree = "<group>";
@@ -120,7 +129,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7B811232972832B00BAE319 /* ErrorGenerator.swift in Sources */,
+				C7B8111D297277AC00BAE319 /* FixedArrayGenerator.swift in Sources */,
 				C7B811162972779500BAE319 /* main.swift in Sources */,
+				C7B8111F297277D400BAE319 /* TestFileGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +256,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -253,6 +266,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
